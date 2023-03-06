@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Quiz</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/main.css">
+    </head>
+    <body id="fx-respond">
+        <div id="container">
+            <div id="content" class="fx-tiles">
+              <!-- FULL WIDTH LAYOUT -->
+              <div class="fx-grid fx-cf">
+                <div class="fx-col">
+                  <!-- ADD BLOCK(S) HERE -->
+                  <!-- START: SHARE BLOCK -->
+                  <div class="fx-block fx-purple fx-share fx-align-left fx-cf purple-bg" style="padding:20px ">
+                    <div class="fx-copy" style="padding-left:20px; padding-bottom:0">
+                      <h2>Sicc Frequencies</h2>
+                      <p>Think you know Sicc very well? Answer correctly to win big prizes</p>
+                      <p><a href="#game" id="start-button" class="fx-btn">Play now</a></p>
+                    </div>
+                  </div>
+                </div>
+                <!-- FULL WIDTH LAYOUT -->
+                <div class="fx-grid fx-cf">
+                  <div class="fx-col">
+                    <!-- ADD BLOCK(S) HERE -->
+                    <div class="fx-block game-container">
+                      <div id="game">
+                        <div class="game-grid">
+                          <p id="timer" class="timer">
+                            1:00:00
+                          </p>
+                          <div class="game-left-col">
+                            <div class="gauge-container" style="background: #ffffff url('images/icon-01.svg') no-repeat center center; background-size: 100px 100px;">
+                              <canvas id="gauge" class="gauge" width="240" height="240"></canvas>
+                              <div class="score-number">0</div>
+                            </div>
+                          </div>
+                          <div class="game-right-col">
+                            <div class="questions">
+                              <div class="question">
+                                <p><span class="number">1 </span><span class="questionText">Which year was Sicc Frequencies formed?</span></p>
+                                <div class="answers">
+                                  <label><input type="checkbox" class="answer" data-correct="false"><span class="text">A. 2019</span></label>
+                                  <label><input type="checkbox" class="answer" data-correct="false"><span class="text">B. 2021</span></label>
+                                  <label><input type="checkbox" class="answer" data-correct="true"><span class="text">C. 2020</span></label>
+                                </div>
+                              </div>
+                              <div class="question">
+                                <p><span class="number">2 </span><span class="questionText">What was Sicc initally called?</span></p>
+                                <div class="answers">
+                                  <label><input type="checkbox" class="answer" data-correct="true"><span class="text">A. Mob19</span></label>
+                                  <label><input type="checkbox" class="answer" data-correct="false"><span class="text">B. M19</span></label>
+                                  <label><input type="checkbox" class="answer" data-correct="false"><span class="text">C. None of the above</span></label>
+                                </div>
+                              </div>
+                              <div class="question">
+                                <p><span class="number">3 </span><span class="questionText">Who are the founding fathers?
+                                </span></p>
+                                <div class="answers">
+                                 <label><input type="checkbox" class="answer" data-correct="true"><span class="text">A. Len Conan & Yung Havy</span></label>
+                                  <label><input type="checkbox" class="answer" data-correct="false"><span class="text">B.  Shax Payne & Yung Havy</span></label>
+                                </div>
+                              </div>
+                              <div class="question">
+                                <p><span class="number">4 </span><span class="questionText">What is sicc mainly focused on?</span></p>
+                                <div class="answers">
+                                  <label><input type="checkbox" class="answer" data-correct="false"><span class="text">A. Music Production</span></label>
+                                  <label><input type="checkbox" class="answer" data-correct="false"><span class="text">B. Music Label Group</span></label>
+                                  <label><input type="checkbox" class="answer" data-correct="true"><span class="text">C.  Music & Film production</span></label>
+                                </div>
+                              </div>
+                            </div>
+                            <div id="game-end-times-up">
+                              <p id="time-out-text" class="game-end-text"></p>
+                              <a href="./challenge-page.html" class="fx-btn">Play again</a>
+        
+                            </div>
+                            <div id="game-end">
+                              <p id="game-end-text" class="game-end-text"></p>
+                            </div>
+                          </div>
+                        </div>
+                        <div id="progress-bar" class="progress-bar">
+                          <div class="indicator current"></div>
+                          <div class="indicator"></div>
+                          <div class="indicator"></div>
+                          <div class="indicator"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>  
+              </div>  
+        
+            </div>
+          </div>
+          <!-- GLOBAL WRAPPER CSS -->
+          <link rel="stylesheet" type="text/css" href="//www.fedex.com/css/t2/global-wrapper-min.css" id="globalCSS" />
+          <!-- MASTER RESPONSIVE CSS -->
+        <link rel="stylesheet" type="text/css" href="//www.fedex.com/css/t2/master-responsive-min.css" />
+          <!-- MASTER RESPONSIVE JAVASCRIPT (Keep below footer include) -->
+          <script type="text/javascript" src="//images.fedex.com/templates/components/libraries/1.0/jQuery/1.7.2/jquery.min.js"></script>
+          <script type="text/javascript" src="//www.fedex.com/templates/components/javascript/v2/fx-master-responsive.js"></script>
+        
+        
+        <script src="/js/script.js" async defer></script>
+    </body>
+</html>
